@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke - Gruppenbenachrichtigung</title>
+    <link rel = "stylesheet" href = "{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Joke - Gruppenbenachrichtigung</h1>
+    <p>Meldung an alle Rechner versenden!</p>
+        <div class = "section">
+            <h1>Gruppenbenachrichtigung eingeben:</h1>
+            <form action = "/submit" method = "POST">
+            <div class = "section1">
+                    <label for = "message_input" class = "headerLabel">Meldung:</label>
+                    <br>
+                    <label for = "time"  class = "custom-label">Zeitpunkt der Störung:</label>
+                    <input type = "time" id="time" name = "time">
+                    <br>
+                    <label for = "duration"  class = "custom-label">Dauer der Störung in Minuten:</label>
+                    <input type = "text" id="duration" name = "duration">
+                    <br>
+                    <label for="MessageType" class = "custom-label">Wähle eine vorgefertigte Meldung aus:</label>
+                    <select id="MessageType" name="MessageType" onchange="updateMessage_Input()">
+                            <option value = "...">...</option>
+                            <option value = "Canias">Canias-Ausfall</option>
+                            <option value = "Internet">Internet-Ausfall</option>
+                            <option value = "Telefon">Telefon-Ausfall</option>
+                    </select>
+                    <br>
+            </div>
+            <textarea id="message_input" name="message_input" class="textfield1" placeholder="..."></textarea>
+            <br>
+            <button type="submit" class="button1">Senden</button>
+            </form>
+        </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

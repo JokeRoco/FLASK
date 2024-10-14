@@ -1,0 +1,71 @@
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #A9A9A9;
+            margin: 0;
+            padding: 30px;
+       }
+
+      h1 {
+            color: #004494;
+     }
+
+       p {
+            font-family: Arial, sans-serif;
+            font-size: 1.2em;
+            color: #004494;
+            line-height: 1.5;
+       }
+
+         .custom-label {   font-family: Arial, sans-serif; /* Schriftart */
+            font-size: 18px; /* Schriftgröße */
+            font-weight: bold; /* Schriftstärke */
+            color: #004494; /* Schriftfarbe */
+
+            display: block; /* Macht das Label zu einem Block-Element */
+            }
+
+           .headerLabel {   font-family: Arial, sans-serif; /* Schriftart */
+            font-size: 22px; /* Schriftgröße */
+            font-weight: bold; /* Schriftstärke */
+            color: #004494; /* Schriftfarbe */
+            text-decoration: underline;
+            display: block; /* Macht das Label zu einem Block-Element */
+            }
+
+         .textfield1 {
+            width: 600px; /* Breite des Eingabefeldes */
+            height: 300px; /* Höhe des Eingabefeldes */
+            padding: 20px; /* Innenabstand */
+            font-size: 16px; /* Schriftgröße */
+            border: 1px solid #ccc; /* Rahmen */
+            border-radius: 5px; /* Abgerundete Ecken */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Schatten */
+          }
+
+          .button1 {
+            background-color: #004494; /* Dunkelblau */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            }
+            .button1:hover {
+            background-color: #003366; /* Dunklerer Blau-Ton beim Hover */
+            }
+
+            .section {
+            margin-bottom: 20px; /* Abstand zwischen den Abschnitten */
+            padding: 15px;
+            border: 1px solid #ccc; /* Rahmen */
+            border-radius: 4px; /* Abgerundete Ecken */
+            background-color: #D3D3D3; /* Hellgrau */
+            }
+            .section1 {
+            width: 600px;
+            margin-bottom: 10px; /* Abstand zwischen den Abschnitten */
+            padding: 10px;
+            border: 1px solid #ccc; /* Rahmen */
+            border-radius: 4px; /* Abgerundete Ecken */
+            background-color: #A9A9A9; /* Hellgrau */
+            }
